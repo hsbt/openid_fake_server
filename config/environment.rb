@@ -24,6 +24,11 @@ Rails::Initializer.run do |config|
   # (create the session table with 'rake create_sessions_table')
   # config.action_controller.session_store = :active_record_store
 
+  config.action_controller.session = {
+    :key    => '_openid_fake_server_session',
+    :secret => '999dd5dc7150f5a97a2ecfdae8c07dad3a127666277177e59d8649914e93fabf93f7ae7333b3e2431dd50899c833fe8559c2b4f8fd3d6575439f86e9b6b5d6d9'
+  }
+
   # Enable page/fragment caching by setting a file-based store
   # (remember to create the caching directory and make it readable to the application)
   # config.action_controller.fragment_cache_store = :file_store, "#{RAILS_ROOT}/cache"
