@@ -1,6 +1,6 @@
 source :rubygems
 
-gem 'rails', '2.3.9'
+gem 'rails', '2.3.11'
 gem 'ruby-openid'
 gem 'thin'
 
